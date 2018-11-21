@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Haas Grot Text R Web";
+    src: url(fonts/neue-haas-grotesk/NeueHaasGrotTextRound-55Roman.woff2) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+@font-face {
+    font-family: "Haas Grot Text R Web";
+    src: url(fonts/neue-haas-grotesk/NeueHaasGrotTextRound-65Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+@font-face {
+    font-family: "Haas Grot Text R Web";
+    src: url(fonts/neue-haas-grotesk/NeueHaasGrotTextRound-75Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
+body,section,article,header,main,div,p,h1,h2,h3,a,ul,li,nav {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Haas Grot Text R Web";
+}
+
+/*--------------- Main Header --------------*/
+.mainHeader__topNavCont {
+    width: 100%;
+    height: 56px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 30px;
+}
+.mainHeader__nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 100%;
+}
+.mainHeader__nav__list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.mainHeader__list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.mainHeader__nav__list__item__link {
+    color: #999;
+    font-size: 14px;
+    padding: 0 10px;
+    display: block;
+    /* display: flex; */
+    height: 100%;
+    line-height: 56px;
+}
+.mainHeader__nav__list__item:hover .mainHeader__nav__list__item__link {
+    color: #ddd;
+}
+.mainHeader__nav__list__item:hover .subList {
+    display: block;
+}
+.mainHeader__nav__list__item__link::first-letter, 
+.subList__item__link::first-letter {
+    text-transform: uppercase;
+}
+.logo {
+    margin-right: 20px;
+    display: inline-block;
+}
+.logo:hover {
+    opacity: 0.6;
+}
+.mainHeader__nav__list__item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.subList {
+    position: absolute;
+    background: #333333;
+    top: 56px;
+    left: -5px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    display: none;
+}
+.subList__item {
+    /* padding-left: 10px; */
+    min-width: 180px;
+}
+.subList__item__link {
+    padding: 5px 15px !important;
+    font-size: 13px;
+    color: #999;
+    font-size: 13px;
+    padding: 0px 10px;
+    display: block;
+}
+.subList__item--divider {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 4px;
+    margin-top: 4px;
+}
+.subList__item__link:hover {
+    color: #ddd;
+    background-color: rgba(255,255,255,0.1);
+}
+.subList--wider {
+    width: 220px;
+}
+.mainHeader__nav__list__item__link--dots {
+    line-height: 31px;
+    font-size: 40px;
+    margin-left: -2px;
+}
