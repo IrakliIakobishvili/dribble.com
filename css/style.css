@@ -27,6 +27,9 @@ body,section,article,header,main,div,p,h1,h2,h3,a,ul,li,nav,input {
     outline: none;
     font-weight: normal;
 }
+body {
+    background: #F4F4F4;
+}
 
 /*--------------- Main Header --------------*/
 .mainHeader__topNavCont {
@@ -115,7 +118,7 @@ body,section,article,header,main,div,p,h1,h2,h3,a,ul,li,nav,input {
     margin-top: 4px;
 }
 .subList__item__link:hover {
-    color: #ddd;
+    /* color: #ddd; */
     background-color: rgba(255,255,255,0.1);
 }
 .subList--wider {
@@ -180,3 +183,74 @@ body,section,article,header,main,div,p,h1,h2,h3,a,ul,li,nav,input {
 .actionBtn:hover {
     background-color: #df3e7b;
 }
+.mainHeader__topNavCont--learnMore {
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 30px;
+    /* margin-left: 5px; */
+}
+.mainHeader__topNavCont--learnMore__link {
+    text-decoration: underline;
+    margin-left: 5px;
+    color: #fff;
+}
+.mainHeader__topNavCont--filter {
+    background-color: #FBFBFB;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+.mainHeader__topNavCont--filter .mainHeader__nav__list {
+
+}
+.mainHeader__topNavCont--filter .mainHeader__nav__list__item__link {
+    padding-right: 15px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-image: url(../images/down_arrow.png);
+    /* background: red; */
+    /* display: flex; */
+    /* align-items: center; */
+    line-height: 50px;
+    font-weight: 500;
+    color: #444;
+}
+
+.mainHeader__topNavCont--filter .mainHeader__nav__list__item__link:hover {
+    color: #444;
+}
+.mainHeader__topNavCont--filter .subList {
+    top: 50px;
+    background-color: #fbfbfb;
+}
+.mainHeader__topNavCont--filter .mainHeader__nav__list__item:hover a {
+    color: #444;
+}
+
+.mainHeader__topNavCont--filter .subList__item__link {
+    color: #999 !important; 
+ }
+.mainHeader__topNavCont--filter .subList__item__link:hover {
+    color: #444 !important;
+    background-color: #eee;
+}
+.filter__optionsBtn {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url(../images/options.png);
+    display: inline-block;
+    margin-right: auto;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    right: 30px;
+    cursor: pointer;
+}
+
