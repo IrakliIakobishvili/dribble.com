@@ -57,6 +57,9 @@ body {
     height: 100%;
     align-items: center;
 }
+.active {
+    color: #fff !important;
+}
 .mainHeader__nav__list__item__link, .signUpBtn, .signInBtn {
     color: #999;
     font-size: 14px;
@@ -264,9 +267,11 @@ body {
 }
 .mainContent .container {
     padding: 30px;
+    padding-bottom: 40px;
     display: flex;
     /* justify-content: center; */
     /* background: green; */
+    flex-direction: column;
 }
 .mainContent__list {
     display: flex;
@@ -420,4 +425,191 @@ body {
     font-style: normal;
     line-height: 1;
     color: #777;
+}
+.registerBtn, .signInBtnBottom {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 12px;
+    font-size: 14px;
+    text-align: center;
+}
+.registerBtn {
+    background: #ea4c89;
+    color: #fff;
+    width: 400px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: .02em;
+    border-radius: 4px;
+}
+.registerBtn:hover {
+    background: #DF3E7B;
+}
+.signInBtnBottom {
+    color: #3a8bbb;
+    width: 95%;
+}
+.signInBtnBottom:hover {
+    color: #1e6189;
+}
+
+
+/*-------------------- Main Footer ------------------*/
+.mainFooter {
+    background-color: #FFFFFF;
+    padding: 30px;
+    padding-bottom: 50px;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+}
+.mainFooter__list {
+    /* max-width: 300px; */
+}
+.mainFooter__list__item {/* margin: 0 50px 0px 0; */line-height: 1.6;font-size: 13px;}
+.logo_bottom img {
+    width: 80px;
+}
+.logo_bottom img:hover {
+    opacity: 0.8;
+}
+.mainFooter__list__item h3, .mainFooter__list__item h3 a {
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0 10px 10px 0;
+}
+.mainFooter__list__item p {
+    margin: 0 50px 10px 0;
+    line-height: 1.6;
+    margin: 0 auto;
+    /* padding: 30px 30px 20px 30px; */
+    font-size: 13px;
+    padding-bottom: 20px;
+    width: 300px;
+    text-align: left;
+}
+.mainFooter__list__item--icons {
+    margin-bottom: 40px;
+}
+.mainFooter__list__item--icons img {
+    margin: 0 10px 0 0;
+    width: 24px;
+    opacity: .37;
+}
+.mainFooter__list__item--icons img:hover {
+    opacity: 1;
+}
+.mainFooter__list__item a {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #999;
+}
+.mainFooter__list__item a:hover {
+    color: #444;
+}
+.mainFooter__list__item--madeWith {
+    white-space: nowrap;
+    margin-top: 15px;
+    position: absolute;
+}
+.rabbit_link {
+    /* border: 1px solid; */
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+.rabbit_link:hover span {
+    opacity: 0.8;
+}
+.rabbit_link img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;/* float: left; */
+    margin-right: 10px;
+}
+.rabbit_link span {
+    /* width: 100%; */
+    display: block;
+    line-height: 18px;
+}
+
+.rabbit_link span:first-child {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3a8bbb;
+}
+.rabbit_link span:last-child {
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+}
+.mainFooter__list__item--ads {
+    display: flex;
+    width: 400px;
+}
+.mainFooter__list__item--ads > div a {
+    display: block;
+}
+.mainFooter__list__item--ads > div a:last-child {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #bbb;
+}
+.mainFooter__list__item--ads > div a:last-child:hover {
+    color: #999;
+}
+
+.mainFooter__list__item--ads > a {
+    margin-right: 20px;
+}
+.adsImg {
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 1px #ccc;
+    box-shadow: 0 0 1px #ccc;
+    max-width: 130px;
+}
+.mainFooter__list__item--statistic {
+    min-height: 56px;
+    padding: 0 0 0 54px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.4;
+    font-weight: normal;
+    color: #777;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-image: url('../images/dribble_pink.png');
+    font-size: 14px;
+}
+.view {
+    display: block;
+    padding-top: 4px;
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #333;
+}
+.mainFooter__list--untitled {
+    position: relative;
+    left: -15px;
+}
+.mainFooter__list--rabbit li:not(:first-child) {
+    margin: 10px 0px;
+}
+
+
+
+
+
+::selection {
+    background: #EA4C89;
+    color: #fff;
 }
